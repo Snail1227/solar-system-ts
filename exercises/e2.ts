@@ -1,8 +1,15 @@
 // SPACE DATA EXERCISE 2
 // Return an array of all Asteroids' names
-// Return example: ['name1', 'name2', ... , 'nameN']
 
-export function getAsteroidNames(asteroids) {}
+import { data } from "../data/data"
+
+// Return example: ['name1', 'name2', ... , 'nameN']
+interface Asteroid {
+    name: string;
+}
+export function getAsteroidNames(asteroids: Asteroid[]): string[] {
+    return asteroids.map((asteroid: Asteroid) => asteroid.name)
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-2"
