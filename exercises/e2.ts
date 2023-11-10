@@ -1,14 +1,11 @@
 // SPACE DATA EXERCISE 2
 // Return an array of all Asteroids' names
-
-import { data } from "../data/data"
-
 // Return example: ['name1', 'name2', ... , 'nameN']
 interface Asteroid {
-    name: string;
+  name: string;
 }
 export function getAsteroidNames(asteroids: Asteroid[]): string[] {
-    return asteroids.map((asteroid: Asteroid) => asteroid.name)
+  return asteroids.map((asteroid: Asteroid) => asteroid.name);
 }
 
 // === TEST YOURSELF ===

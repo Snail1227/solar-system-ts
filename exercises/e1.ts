@@ -1,17 +1,14 @@
-import { data } from "../data/data";
 // SPACE DATA EXERCISE 1
 // Return an array of all Planets' names
-
-
 
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 interface Planet {
-    name: string;
+  name: string;
 }
 
 export function getPlanetNames(planets: Planet[]): string[] {
-    return planets.map((planet: Planet) => planet.name);
+  return planets.map((planet: Planet) => planet.name);
 }
 
 // === TEST YOURSELF ===

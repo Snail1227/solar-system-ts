@@ -3,14 +3,14 @@
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 interface Planet {
-    gravity: number;
-    name: string;
+  gravity: number;
+  name: string;
 }
 
 export function getPlanetNamesWithLowGravity(planets: Planet[]): string[] {
-    return planets
-        .filter((planet: Planet) => planet.gravity < 10)
-        .map((planet: Planet) => planet.name);
+  return planets
+    .filter((planet: Planet) => planet.gravity < 10)
+    .map((planet: Planet) => planet.name);
 }
 
 // === TEST YOURSELF ===
