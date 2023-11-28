@@ -2,21 +2,15 @@
 // Return a given asteroid object of data
 // make sure that you destructure your parameters
 
-interface AsteroidData {
-  name: string;
-}
-
-interface AllData {
-  asteroids: AsteroidData[];
-}
+import { Asteroid, PlanetData } from "../data/data";
 
 export function getAsteroidDataByName({
   allData,
   asteroidName,
 }: {
-  allData: AllData;
+  allData: PlanetData;
   asteroidName: string;
-}): AsteroidData | undefined {
+}): Asteroid | undefined {
   return allData.asteroids.find((asteroid) => asteroid.name === asteroidName);
 }
 

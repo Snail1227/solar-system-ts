@@ -1,10 +1,7 @@
 // SPACE DATA EXERCISE 7
 // Return an array of all Planets names that have moons
 
-interface Planet {
-  moonsCount: number;
-  name: string;
-}
+import { Planet } from "../data/data";
 
 export function getPlanetsWithMoons(planets: Planet[]): string[] {
   return planets
